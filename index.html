@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Risos — Implantes Dentários em Ferraz de Vasconcelos | Volte a sorrir</title>
+<meta name="description" content="Implantes dentários com atendimento humanizado e preço justo em Ferraz de Vasconcelos. Cirurgia sem trauma, avaliação honesta. Atendemos Poá, Suzano, Itaquaquecetuba, Mauá e região. Agende pelo WhatsApp.">
+<meta property="og:title" content="Clínica Risos — Volte a sorrir com segurança">
+<meta property="og:description" content="Implantes dentários com preço justo e atendimento humanizado em Ferraz de Vasconcelos e região.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0f3d38">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%98%81%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Clínica Risos",
+  "description": "Clínica odontológica especializada em implantes dentários, com atendimento humanizado e preço justo.",
+  "email": "milenasferreira@outlook.com",
+  "telephone": "+55 35 98405-0580",
+  "foundingDate": "2026",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ferraz de Vasconcelos",
+    "addressRegion": "SP",
+    "postalCode": "08500-020",
+    "addressCountry": "BR"
+  },
+  "areaServed": ["Ferraz de Vasconcelos","Poá","Itaquaquecetuba","Suzano","Guaianases","Itaim Paulista","Mauá"],
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"16:00"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --ink:#11302c;
+    --ink-soft:#3d5c57;
+    --teal:#0f6a5e;
+    --teal-deep:#0f3d38;
+    --teal-soft:#e5f2ef;
+    --cream:#faf6ee;
+    --white:#ffffff;
+    --gold:#d9a441;
+    --gold-soft:#f7ecd7;
+    --wa:#1eb85b;
+    --wa-deep:#128c45;
+    --radius:20px;
+    --shadow:0 10px 30px rgba(15,61,56,.10);
+    --shadow-lg:0 24px 60px rgba(15,61,56,.16);
+    --font-head:"Fraunces", Georgia, serif;
+    --font-body:"Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+  body{
+    font-family:var(--font-body);
+    font-size:18px;line-height:1.65;
+    color:var(--ink);background:var(--cream);
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:var(--teal)}
+  .wrap{width:min(1120px,92%);margin-inline:auto}
+  h1,h2,h3{font-family:var(--font-head);line-height:1.15;color:var(--teal-deep);font-weight:600}
+  h1{font-size:clamp(2.1rem,5.2vw,3.6rem)}
+  h2{font-size:clamp(1.7rem,3.6vw,2.5rem)}
+  h3{font-size:1.22rem}
+  .kicker{
+    display:inline-block;font-size:.82rem;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--teal);
+    background:var(--teal-soft);padding:.45em 1.1em;border-radius:999px;margin-bottom:1rem;
+  }
+  .muted{color:var(--ink-soft)}
+  section{padding:clamp(3.5rem,8vw,6rem) 0}
+
+  /* ---------- botões ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.6em;
+    font-weight:700;font-size:1.05rem;text-decoration:none;
+    padding:1em 1.7em;border-radius:999px;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    cursor:pointer;border:none;
+  }
+  .btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 26px rgba(30,184,91,.35)}
+  .btn-wa:hover{background:var(--wa-deep);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--teal-deep);border:2px solid rgba(15,61,56,.25)}
+  .btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+  .btn svg{flex:none}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(250,246,238,.92);backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(15,61,56,.08);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;gap:1rem}
+  .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+  .logo-mark{
+    width:44px;height:44px;border-radius:14px;background:var(--teal-deep);
+    display:grid;place-items:center;flex:none;
+  }
+  .logo-name{font-family:var(--font-head);font-weight:700;font-size:1.5rem;color:var(--teal-deep);letter-spacing:-.01em}
+  .logo-name small{display:block;font-family:var(--font-body);font-weight:600;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}
+  .nav-links{display:flex;gap:1.6rem;list-style:none;align-items:center}
+  .nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.98rem}
+  .nav-links a:hover{color:var(--teal)}
+  .nav .btn{padding:.7em 1.3em;font-size:.95rem}
+  .menu-btn{display:none;background:none;border:2px solid rgba(15,61,56,.2);border-radius:12px;padding:.5rem .7rem;font-size:1.2rem;color:var(--teal-deep);cursor:pointer}
+  @media (max-width:840px){
+    .nav-links{
+      display:none;position:absolute;top:100%;left:0;right:0;
+      background:var(--cream);flex-direction:column;padding:1.4rem 6%;gap:1.1rem;
+      border-bottom:1px solid rgba(15,61,56,.1);box-shadow:var(--shadow);align-items:flex-start;
+    }
+    .nav-links.open{display:flex}
+    .menu-btn{display:block}
+    .nav > .btn-wa{display:none}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(3rem,7vw,5.5rem) 0 clamp(3.5rem,8vw,6rem);overflow:hidden;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}}
+  .hero h1 em{font-style:normal;color:var(--teal);position:relative;white-space:nowrap}
+  .hero h1 em::after{
+    content:"";position:absolute;left:0;right:0;bottom:.06em;height:.28em;
+    background:var(--gold-soft);z-index:-1;border-radius:4px;
+  }
+  .hero p.lead{font-size:1.18rem;color:var(--ink-soft);margin:1.3rem 0 2rem;max-width:34em}
+  .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.2rem}
+  .hero-chips{display:flex;gap:.7rem;flex-wrap:wrap}
+  .chip{
+    background:var(--white);border:1px solid rgba(15,61,56,.1);border-radius:999px;
+    padding:.5em 1.1em;font-size:.88rem;font-weight:600;color:var(--ink-soft);
+    display:inline-flex;align-items:center;gap:.5em;box-shadow:0 4px 14px rgba(15,61,56,.06);
+  }
+  .chip b{color:var(--teal)}
+  .hero-art{position:relative}
+  .hero-card{
+    background:var(--white);border-radius:calc(var(--radius) + 8px);
+    box-shadow:var(--shadow-lg);padding:2.2rem;position:relative;z-index:2;
+  }
+  .hero-card .smile{margin-inline:auto;width:min(280px,80%)}
+  .hero-card figcaption{text-align:center;margin-top:1.4rem}
+  .hero-card figcaption strong{font-family:var(--font-head);font-size:1.25rem;color:var(--teal-deep);display:block}
+  .hero-card figcaption span{font-size:.92rem;color:var(--ink-soft)}
+  .hero-badge{
+    position:absolute;z-index:3;background:var(--teal-deep);color:#fff;
+    border-radius:16px;padding:.8rem 1.2rem;font-size:.9rem;font-weight:600;
+    box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:.6rem;
+  }
+  .hero-badge.b1{top:-1.2rem;right:-.6rem}
+  .hero-badge.b2{bottom:-1.2rem;left:-.6rem;background:var(--gold);color:var(--teal-deep)}
+  @media (max-width:900px){
+    .hero-badge.b1{right:.4rem}.hero-badge.b2{left:.4rem}
+  }
+  .blob{
+    position:absolute;inset:auto;z-index:1;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, var(--teal-soft), transparent 70%);
+    width:520px;height:520px;top:-120px;right:-140px;pointer-events:none;
+  }
+
+  /* ---------- dores ---------- */
+  .dores{background:var(--teal-deep);color:#e8f2f0}
+  .dores h2{color:#fff}
+  .dores .kicker{background:rgba(255,255,255,.12);color:var(--gold)}
+  .dores-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+  @media (max-width:840px){.dores-grid{grid-template-columns:1fr}}
+  .dor-card{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+    border-radius:var(--radius);padding:1.8rem;
+  }
+  .dor-card .ico{font-size:1.9rem;margin-bottom:.8rem}
+  .dor-card h3{color:#fff;margin-bottom:.5rem;font-size:1.15rem}
+  .dor-card p{color:#c4d9d5;font-size:.98rem}
+  .dores .after{margin-top:2.6rem;font-size:1.15rem;color:#fff;max-width:44em}
+  .dores .after strong{color:var(--gold)}
+
+  /* ---------- passos ---------- */
+  .passos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2.8rem;counter-reset:passo}
+  @media (max-width:840px){.passos-grid{grid-template-columns:1fr}}
+  .passo{
+    background:var(--white);border-radius:var(--radius);padding:2rem;
+    box-shadow:var(--shadow);position:relative;
+  }
+  .passo::before{
+    counter-increment:passo;content:counter(passo);
+    font-family:var(--font-head);font-weight:700;font-size:2.6rem;color:var(--gold);
+    display:block;margin-bottom:.6rem;line-height:1;
+  }
+  .passo h3{margin-bottom:.5rem}
+  .passo p{color:var(--ink-soft);font-size:.98rem}
+
+  /* ---------- tratamentos ---------- */
+  .trat{background:var(--white)}
+  .trat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:2.8rem}
+  @media (max-width:1000px){.trat-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.trat-grid{grid-template-columns:1fr}}
+  .trat-card{
+    border:1px solid rgba(15,61,56,.1);border-radius:var(--radius);
+    padding:1.8rem;background:var(--cream);
+    transition:transform .18s ease, box-shadow .18s ease;
+    display:flex;flex-direction:column;gap:.6rem;
+  }
+  .trat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .trat-card .ico{
+    width:52px;height:52px;border-radius:14px;background:var(--teal-soft);
+    display:grid;place-items:center;color:var(--teal);margin-bottom:.4rem;
+  }
+  .trat-card p{color:var(--ink-soft);font-size:.95rem;flex:1}
+  .trat-card .destaque{
+    font-size:.82rem;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.08em;
+  }
+  .trat-note{margin-top:2rem;font-size:.95rem;color:var(--ink-soft);max-width:52em}
+
+  /* ---------- porquê ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;margin-top:2.8rem}
+  @media (max-width:840px){.why-grid{grid-template-columns:1fr}}
+  .why-card{
+    background:var(--white);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);
+    display:flex;gap:1.2rem;align-items:flex-start;
+  }
+  .why-card .ico{
+    width:48px;height:48px;border-radius:999px;background:var(--gold-soft);color:var(--gold);
+    display:grid;place-items:center;flex:none;font-size:1.3rem;
+  }
+  .why-card p{color:var(--ink-soft);font-size:.97rem;margin-top:.3rem}
+
+  /* ---------- história ---------- */
+  .historia{background:var(--teal-soft)}
+  .hist-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  @media (max-width:900px){.hist-grid{grid-template-columns:1fr}}
+  .hist-quote{
+    background:var(--white);border-radius:var(--radius);padding:2.4rem;box-shadow:var(--shadow);
+    font-family:var(--font-head);font-size:1.35rem;line-height:1.5;color:var(--teal-deep);
+    position:relative;
+  }
+  .hist-quote::before{
+    content:"“";position:absolute;top:-.35em;left:.35em;font-size:5rem;color:var(--gold);opacity:.5;
+  }
+  .hist-quote footer{font-family:var(--font-body);font-size:.9rem;color:var(--ink-soft);margin-top:1.2rem}
+  .valores{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+  .valores .chip{background:var(--white)}
+
+  /* ---------- cidades ---------- */
+  .cidades .chips{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+  .cidades .chip{font-size:1rem;padding:.7em 1.4em}
+
+  /* ---------- faq ---------- */
+  .faq{background:var(--white)}
+  .faq-list{margin-top:2.4rem;display:grid;gap:1rem;max-width:56rem}
+  details{
+    background:var(--cream);border:1px solid rgba(15,61,56,.1);
+    border-radius:16px;padding:1.2rem 1.5rem;
+  }
+  details[open]{background:var(--teal-soft)}
+  summary{
+    font-weight:700;font-size:1.05rem;cursor:pointer;color:var(--teal-deep);
+    list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.5rem;color:var(--teal);flex:none;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:.8rem;color:var(--ink-soft)}
+
+  /* ---------- contato ---------- */
+  .contato{background:var(--teal-deep);color:#dcebe8}
+  .contato h2{color:#fff}
+  .contato .kicker{background:rgba(255,255,255,.12);color:var(--gold)}
+  .cont-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;margin-top:2.6rem}
+  @media (max-width:900px){.cont-grid{grid-template-columns:1fr}}
+  .cont-card{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+    border-radius:var(--radius);padding:2rem;
+  }
+  .cont-card h3{color:#fff;margin-bottom:1rem}
+  .cont-line{display:flex;gap:.9rem;align-items:flex-start;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .cont-line:last-child{border-bottom:none}
+  .cont-line .ico{color:var(--gold);flex:none;margin-top:.15rem}
+  .cont-line a{color:#fff;text-decoration:none;font-weight:600}
+  .cont-line a:hover{text-decoration:underline}
+  .horarios{width:100%;border-collapse:collapse;margin-top:.4rem}
+  .horarios td{padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.98rem}
+  .horarios td:last-child{text-align:right;font-weight:700;color:#fff}
+  .horarios tr:last-child td{border-bottom:none}
+  .horarios .fechado{color:#9db8b3;font-weight:600}
+  .cta-final{
+    margin-top:2.6rem;background:var(--gold);border-radius:var(--radius);
+    padding:2.4rem;color:var(--teal-deep);text-align:center;
+  }
+  .cta-final h3{font-size:1.5rem;margin-bottom:.4rem;color:var(--teal-deep)}
+  .cta-final p{margin-bottom:1.4rem;font-weight:500}
+
+  /* ---------- footer ---------- */
+  footer.site{
+    background:var(--teal-deep);color:#9db8b3;font-size:.88rem;
+    border-top:1px solid rgba(255,255,255,.1);padding:2rem 0;
+  }
+  footer.site .wrap{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+  footer.site p{max-width:46em}
+
+  /* ---------- whatsapp flutuante ---------- */
+  .wa-float{
+    position:fixed;right:1.2rem;bottom:1.2rem;z-index:80;
+    width:64px;height:64px;border-radius:50%;background:var(--wa);
+    display:grid;place-items:center;box-shadow:0 12px 30px rgba(18,140,69,.45);
+    transition:transform .18s ease;
+  }
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#" aria-label="Clínica Risos — início">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 9c2.5 5 6 7.5 9 7.5S18.5 14 21 9" stroke="#d9a441" stroke-width="2.6" stroke-linecap="round"/><path d="M7 12.6c.9.9 2 1.6 3 2M17 12.6c-.9.9-2 1.6-3 2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      <span class="logo-name">Risos<small>Clínica Odontológica</small></span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+    <ul class="nav-links" id="menu">
+      <li><a href="#tratamentos">Tratamentos</a></li>
+      <li><a href="#porque">Por que a Risos</a></li>
+      <li><a href="#clinica">A Clínica</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-wa" href="https://wa.me/5535984050580?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Risos%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+      Agendar avaliação
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Apresentação">
+    <div class="blob" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Implantes dentários em Ferraz de Vasconcelos</span>
+        <h1>Volte a <em>sorrir, comer e viver</em> sem medo.</h1>
+        <p class="lead">Se a falta de dentes ou a dentadura solta tiraram sua liberdade de sorrir e de aproveitar uma boa refeição, a gente devolve. Implantes com <strong>cirurgia sem trauma</strong>, atendimento humanizado e <strong>preço justo</strong> — do jeito que deveria ser.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" href="https://wa.me/5535984050580?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Risos%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+            Falar no WhatsApp agora
+          </a>
+          <a class="btn btn-ghost" href="#tratamentos">Conhecer os tratamentos</a>
+        </div>
+        <div class="hero-chips">
+          <span class="chip"><b>8</b> especialistas sócios</span>
+          <span class="chip">Atendimento <b>humanizado</b></span>
+          <span class="chip">Sábado até <b>16h</b></span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-badge b1">✦ Foco total em implantes</div>
+        <figure class="hero-card">
+          <svg class="smile" viewBox="0 0 300 220" role="img" aria-label="Ilustração de um sorriso">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0f6a5e"/><stop offset="1" stop-color="#0f3d38"/>
+              </linearGradient>
+            </defs>
+            <circle cx="150" cy="110" r="100" fill="#e5f2ef"/>
+            <path d="M70 95 Q150 200 230 95" fill="none" stroke="url(#g1)" stroke-width="14" stroke-linecap="round"/>
+            <path d="M92 112 Q150 175 208 112 L208 118 Q150 155 92 118 Z" fill="#fff" stroke="#0f3d38" stroke-width="3" stroke-linejoin="round"/>
+            <line x1="115" y1="112" x2="115" y2="132" stroke="#0f3d38" stroke-width="2.5"/>
+            <line x1="138" y1="118" x2="138" y2="140" stroke="#0f3d38" stroke-width="2.5"/>
+            <line x1="162" y1="118" x2="162" y2="140" stroke="#0f3d38" stroke-width="2.5"/>
+            <line x1="185" y1="112" x2="185" y2="132" stroke="#0f3d38" stroke-width="2.5"/>
+            <circle cx="243" cy="60" r="10" fill="#d9a441"/>
+            <circle cx="262" cy="84" r="5" fill="#d9a441" opacity=".55"/>
+            <circle cx="52" cy="70" r="7" fill="#0f6a5e" opacity=".35"/>
+          </svg>
+          <figcaption>
+            <strong>Seu sorriso de volta</strong>
+            <span>avaliação honesta, plano claro e resultado que muda a rotina</span>
+          </figcaption>
+        </figure>
+        <div class="hero-badge b2">★ Preço justo, sem surpresa</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DORES -->
+  <section class="dores" aria-label="Você se reconhece nessas situações">
+    <div class="wrap">
+      <span class="kicker">A gente entende o que você sente</span>
+      <h2>Quando falta um dente,<br>falta muito mais que um dente.</h2>
+      <div class="dores-grid">
+        <div class="dor-card reveal">
+          <div class="ico" aria-hidden="true">📸</div>
+          <h3>Sorrir de boca fechada</h3>
+          <p>Esconder o sorriso na foto da família, na festa, no espelho. A vergonha vira hábito — e a autoestima vai junto.</p>
+        </div>
+        <div class="dor-card reveal">
+          <div class="ico" aria-hidden="true">🍖</div>
+          <h3>Medo no churrasco</h3>
+          <p>Recusar a carne, cortar tudo em pedacinhos, comer devagar com receio da dentadura. A comida perde a graça — e o momento também.</p>
+        </div>
+        <div class="dor-card reveal">
+          <div class="ico" aria-hidden="true">💬</div>
+          <h3>Insegurança para falar</h3>
+          <p>A prótese que se mexe na hora da conversa, o medo de que percebam. Você fala menos, ri menos, participa menos.</p>
+        </div>
+      </div>
+      <p class="after reveal">Nosso trabalho é devolver o que isso tirou de você: <strong>segurança para comer, coragem para sorrir e qualidade de vida</strong> — com dentes fixos, que não se mexem e não te deixam na mão.</p>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section aria-label="Como funciona o tratamento">
+    <div class="wrap">
+      <span class="kicker">Simples, claro e sem pressão</span>
+      <h2>Do primeiro olá ao sorriso novo,<br>em três passos.</h2>
+      <div class="passos-grid">
+        <div class="passo reveal">
+          <h3>Avaliação honesta</h3>
+          <p>Você conversa com um especialista, entende seu caso e recebe um plano claro, com valores transparentes. Sem empurrar tratamento que você não precisa — honestidade é valor de fundação aqui.</p>
+        </div>
+        <div class="passo reveal">
+          <h3>Cirurgia sem trauma</h3>
+          <p>Técnica moderna e cuidado humano para um procedimento tranquilo, com o mínimo de desconforto. Quem tem medo de dentista é recebido com paciência, não com pressa.</p>
+        </div>
+        <div class="passo reveal">
+          <h3>Reabilitação completa</h3>
+          <p>Dentes fixos, mastigação firme e acompanhamento até você se sentir seguro. O resultado que você vê no espelho — e sente no primeiro almoço de domingo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRATAMENTOS -->
+  <section class="trat" id="tratamentos" aria-label="Tratamentos">
+    <div class="wrap">
+      <span class="kicker">Nosso foco é implante</span>
+      <h2>Tratamentos para cada fase<br>do seu sorriso.</h2>
+      <div class="trat-grid">
+        <div class="trat-card reveal">
+          <div class="ico" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3c-2 0-3.5 1.8-3.5 4 0 3.5 1.5 5 2 8 .3 2 .5 6 2 6s1.3-3 1.5-5c.2-1.5.5-2 1-2s.8.5 1 2c.2 2 0 5 1.5 5s1.7-4 2-6c.5-3 2-4.5 2-8 0-2.2-1.5-4-3.5-4-1.5 0-2 1-3 1s-1.5-1-3-1Z"/></svg>
+          </div>
+          <span class="destaque">Mais procurado</span>
+          <h3>Implante unitário</h3>
+          <p>Perdeu um ou alguns dentes? O implante substitui a raiz e recebe um dente fixo, com aparência e função naturais.</p>
+        </div>
+        <div class="trat-card reveal">
+          <div class="ico" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 13c2.5 3.5 5.5 5 8 5s5.5-1.5 8-5"/><path d="M6 13.5v3M10 15.5v3M14 15.5v3M18 13.5v3"/></svg>
+          </div>
+          <span class="destaque">Arcada completa</span>
+          <h3>Protocolo fixo</h3>
+          <p>Para quem perdeu todos os dentes: uma prótese completa fixada sobre implantes. Nada de dentadura solta — dentes firmes o dia inteiro.</p>
+        </div>
+        <div class="trat-card reveal">
+          <div class="ico" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="8" width="16" height="10" rx="3"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          </div>
+          <span class="destaque">Estabilidade</span>
+          <h3>Prótese sobre implante</h3>
+          <p>Sua prótese ganha travamento em implantes: mais firmeza para mastigar e falar, sem medo de escorregar.</p>
+        </div>
+        <div class="trat-card reveal">
+          <div class="ico" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v10M12 13l-3.5-3.5M12 13l3.5-3.5"/><path d="M5 17c2 2.5 4.5 4 7 4s5-1.5 7-4"/></svg>
+          </div>
+          <span class="destaque">Preparo</span>
+          <h3>Extrações e planejamento</h3>
+          <p>Quando é preciso preparar a boca antes do implante, cuidamos de tudo na mesma equipe — do raio-x ao plano completo.</p>
+        </div>
+      </div>
+      <p class="trat-note">Cada caso é único: o tratamento certo (e o valor exato) é definido na avaliação, com transparência total. <a href="https://wa.me/5535984050580?text=Ol%C3%A1!%20Quero%20saber%20qual%20tratamento%20%C3%A9%20o%20ideal%20para%20o%20meu%20caso.">Pergunte pelo seu caso no WhatsApp</a> — respondemos com honestidade, inclusive se implante não for a melhor opção para você.</p>
+    </div>
+  </section>
+
+  <!-- POR QUE -->
+  <section id="porque" aria-label="Por que escolher a Clínica Risos">
+    <div class="wrap">
+      <span class="kicker">Por que a Risos</span>
+      <h2>Qualidade de clínica grande,<br>preço que cabe na sua vida.</h2>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="ico" aria-hidden="true">💰</div>
+          <div>
+            <h3>Preço justo de verdade</h3>
+            <p>Trabalhamos com materiais de qualidade e cobramos abaixo do praticado no mercado. Sem taxa escondida, sem venda casada: o plano que você recebe é o plano que você paga.</p>
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico" aria-hidden="true">🤝</div>
+          <div>
+            <h3>Atendimento humanizado</h3>
+            <p>Você não é uma ficha na fila. Aqui tem tempo de consulta de verdade, escuta e explicação até a última dúvida — especialmente para quem chega com medo de dentista.</p>
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico" aria-hidden="true">🩺</div>
+          <div>
+            <h3>Cirurgia sem trauma</h3>
+            <p>Técnicas modernas e mão leve para um procedimento tranquilo e recuperação mais confortável. É o motivo nº 1 pelos quais pacientes nos indicam.</p>
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico" aria-hidden="true">⚖️</div>
+          <div>
+            <h3>Ética e transparência</h3>
+            <p>Fundada sobre três valores: ética, transparência e honestidade. Se um tratamento não é necessário, a gente fala. Confiança se constrói na primeira consulta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section class="historia" id="clinica" aria-label="Nossa história">
+    <div class="wrap hist-grid">
+      <div>
+        <span class="kicker">Nossa história</span>
+        <h2>8 especialistas, um propósito:<br>fazer diferente das redes.</h2>
+        <p class="muted" style="margin-top:1.2rem">A Risos nasceu em 2026, quando 8 profissionais que trabalhavam em grandes redes de clínicas decidiram abrir a própria casa — em Ferraz de Vasconcelos, com um compromisso simples: <strong>tratamento de qualidade com preço justo</strong>, e paciente tratado como gente.</p>
+        <p class="muted" style="margin-top:1rem">Aqui, quem cuida de você é sócio da clínica. Isso muda tudo: cada sorriso entregue carrega o nome e a reputação de quem fez.</p>
+        <div class="valores">
+          <span class="chip"><b>✓</b> Ética</span>
+          <span class="chip"><b>✓</b> Transparência</span>
+          <span class="chip"><b>✓</b> Honestidade</span>
+        </div>
+      </div>
+      <blockquote class="hist-quote reveal">
+        Devolver um sorriso é devolver autoestima, segurança e qualidade de vida. É para isso que a Risos existe.
+        <footer>— Milena Ferreira, responsável pela Clínica Risos</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CIDADES -->
+  <section class="cidades" aria-label="Cidades atendidas">
+    <div class="wrap">
+      <span class="kicker">Onde atendemos</span>
+      <h2>Perto de você, no Alto Tietê<br>e Zona Leste.</h2>
+      <p class="muted" style="margin-top:1rem;max-width:42em">Nossa clínica fica em Ferraz de Vasconcelos, com acesso fácil para quem vem das cidades e bairros vizinhos:</p>
+      <div class="chips">
+        <span class="chip"><b>📍</b> Ferraz de Vasconcelos</span>
+        <span class="chip">Poá</span>
+        <span class="chip">Itaquaquecetuba</span>
+        <span class="chip">Suzano</span>
+        <span class="chip">Guaianases</span>
+        <span class="chip">Itaim Paulista</span>
+        <span class="chip">Mauá</span>
+        <span class="chip">e toda a região</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="duvidas" aria-label="Perguntas frequentes">
+    <div class="wrap">
+      <span class="kicker">Dúvidas frequentes</span>
+      <h2>O que todo mundo pergunta<br>antes de agendar.</h2>
+      <div class="faq-list">
+        <details class="reveal">
+          <summary>Colocar implante dói?</summary>
+          <p>O procedimento é feito com anestesia e técnicas modernas que priorizam o conforto — é a nossa marca: cirurgia sem trauma. A maioria dos pacientes se surpreende com a tranquilidade do processo, e o pós-operatório é acompanhado de perto pela equipe.</p>
+        </details>
+        <details class="reveal">
+          <summary>Quanto custa um implante?</summary>
+          <p>Depende do seu caso — quantidade de dentes, condição óssea e tipo de prótese. Nosso compromisso: valores abaixo do mercado com materiais de qualidade, e um orçamento transparente entregue já na avaliação, sem surpresa depois.</p>
+        </details>
+        <details class="reveal">
+          <summary>Tenho medo de dentista. Vou ser atendido mesmo assim?</summary>
+          <p>Especialmente por isso. Nosso atendimento é humanizado: consulta com tempo, explicação de cada etapa e zero pressão. Muitos dos nossos pacientes chegaram adiando o tratamento há anos por medo — e saíram sorrindo.</p>
+        </details>
+        <details class="reveal">
+          <summary>Perdi todos os dentes. Ainda dá para fazer implante?</summary>
+          <p>Na maioria dos casos, sim — é justamente a nossa especialidade. O protocolo fixo sobre implantes substitui a arcada completa. A viabilidade exata é confirmada na avaliação com exame de imagem.</p>
+        </details>
+        <details class="reveal">
+          <summary>Idade é impedimento?</summary>
+          <p>Não existe idade máxima para voltar a sorrir. O que avaliamos é a saúde geral e a estrutura óssea — muitos dos nossos pacientes têm 50, 60, 70+ anos e estão reabilitados e felizes.</p>
+        </details>
+        <details class="reveal">
+          <summary>Como agendo a avaliação?</summary>
+          <p>Pelo WhatsApp: você manda uma mensagem, nossa equipe responde no horário comercial e encontra o melhor horário para você — inclusive aos sábados até as 16h.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato" aria-label="Contato e horários">
+    <div class="wrap">
+      <span class="kicker">Fale com a gente</span>
+      <h2>O primeiro passo do seu novo sorriso<br>é uma mensagem.</h2>
+      <div class="cont-grid">
+        <div class="cont-card reveal">
+          <h3>Contato</h3>
+          <div class="cont-line">
+            <span class="ico" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>
+            </span>
+            <div>WhatsApp<br><a href="https://wa.me/5535984050580?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Risos%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">(35) 98405-0580</a></div>
+          </div>
+          <div class="cont-line">
+            <span class="ico" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <div>E-mail<br><a href="mailto:milenasferreira@outlook.com">milenasferreira@outlook.com</a></div>
+          </div>
+          <div class="cont-line">
+            <span class="ico" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>Endereço<br><a href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Risos+Ferraz+de+Vasconcelos+08500-020" target="_blank" rel="noopener">Ferraz de Vasconcelos – SP · CEP 08500-020</a><br><span style="font-size:.85rem;color:#9db8b3">[endereço completo — preencher com rua e número]</span></div>
+          </div>
+        </div>
+        <div class="cont-card reveal">
+          <h3>Horários de atendimento</h3>
+          <table class="horarios">
+            <tr><td>Segunda a sexta</td><td>9h às 19h</td></tr>
+            <tr><td>Sábado</td><td>9h às 16h</td></tr>
+            <tr><td>Domingo</td><td class="fechado">Fechado</td></tr>
+          </table>
+          <p style="margin-top:1.2rem;font-size:.92rem;color:#9db8b3">Mensagens fora do horário são respondidas no próximo período de atendimento.</p>
+        </div>
+      </div>
+      <div class="cta-final reveal">
+        <h3>Chega de adiar o seu sorriso.</h3>
+        <p>Mande um oi — a avaliação é o primeiro passo, e ele é mais fácil do que você imagina.</p>
+        <a class="btn" style="background:var(--teal-deep);color:#fff" href="https://wa.me/5535984050580?text=Ol%C3%A1!%20Quero%20dar%20o%20primeiro%20passo%20para%20voltar%20a%20sorrir.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+          Quero minha avaliação
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong style="color:#fff">Clínica Risos</strong> · Ferraz de Vasconcelos – SP · Desde 2026<br>
+    Responsável técnico: [NOME DO CIRURGIÃO-DENTISTA] — CRO-SP [NÚMERO] <em>(obrigatório antes de publicar)</em></p>
+    <p>Este site não coleta dados pessoais nem usa cookies de rastreamento. O contato acontece diretamente pelo seu WhatsApp ou e-mail. © <span id="ano">2026</span> Clínica Risos.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5535984050580?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Risos%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+</a>
+
+<script>
+  // menu mobile
+  const btn=document.querySelector('.menu-btn'),menu=document.getElementById('menu');
+  btn.addEventListener('click',()=>{
+    const open=menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+    btn.textContent=open?'✕':'☰';
+  });
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    menu.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='☰';
+  }));
+  // reveal on scroll
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+  }),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  // ano
+  document.getElementById('ano').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
