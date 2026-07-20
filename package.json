@@ -1,0 +1,13 @@
+{
+    "name": "clinica-risos",
+    "version": "1.0.0",
+    "description": "Clínica Risos - Implantes Dentários em Ferraz de Vasconcelos",
+    "main": "index.html",
+    "scripts": {
+          "dev": "python -m http.server 3000",
+          "build": "echo 'No build needed for static site'"
+    },
+    "keywords": ["implantes", "odontologia", "ferraz"],
+    "author": "Clínica Risos",
+    "license": "ISC"
+}
